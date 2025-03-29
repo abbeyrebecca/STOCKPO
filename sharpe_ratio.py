@@ -1,8 +1,10 @@
 stock = pd.read_csv('Stock_portfolio_data.csv')
 
 stock_1997 = stock.iloc[0:1577,:]
+# Subset dataframe to only include years 1993-1997.
 
 stock_cleaned = stock_1997.dropna(axis=1, how='any')
+# Drop all NA or missing values.
 
 date_time_format = stock_cleaned.set_index(pd.to_datetime(stock_cleaned["Date"], format='%Y%m%d'))
 # set the dataframe's date column to be in date time format.
