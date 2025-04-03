@@ -24,16 +24,18 @@ print(min(num_stocks_list), max(num_stocks_list))
 #Describe 
 stocks.describe()
 
-#Initial plotting
+#---Initial plotting of first two stocks listed in dataframe---
+
+#First year
 stocks_subset = stocks.loc[pd.Timestamp("1993-09-07"):pd.Timestamp("1994-09-07")].iloc[:,:2]
 stocks_subset.plot.line(title = "1 year time period");
 
+#Entire time period (26 years)
 stocks_subset = stocks.loc[pd.Timestamp("1993-09-07"):pd.Timestamp("2019-07-31")].iloc[:,:2]
 stocks_subset.plot.line(title = "Entire 26 year time period");
 
+#2010 to 2013 - this clearly shows the time when both stocks are removed from the S&P 500
 stocks_subset = stocks.loc[pd.Timestamp("2010-01-01"):pd.Timestamp("2013-01-01")].iloc[:,:2]
 stocks_subset.plot.line(title = "2010 to 2013: the disapearance of both stocks");
 
-stocks_total = stocks.sum(axis=1) #Not actually correct
-mean = stocks_total.rolling('30d', center=True).mean()
-mean.plot.line();
+#--------------------------------------------------------------
