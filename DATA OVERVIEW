@@ -1,0 +1,83 @@
+--- DATASET OVERVIEW ---
+Data shape: (1827, 1200)
+Time period: 2014-07-31 to 2019-07-31
+Trading days: 1827
+
+Potential stock columns: 1199
+Stocks with >95% complete data: 612
+
+--- SELECTED STOCKS FOR ANALYSIS ---
+Available target stocks: 12 / 12
+Stocks selected for analysis:
+- AAPL US Equity
+- MSFT US Equity
+- GOOGL US Equity
+- AMZN US Equity
+- FB US Equity
+- JNJ US Equity
+- JPM US Equity
+- V US Equity
+- PG US Equity
+- MA US Equity
+- NFLX US Equity
+- NVDA US Equity
+
+--- PRICE TRENDS ANALYSIS ---
+Total Return over the period:
+NVDA: 943.79%
+AMZN: 506.58%
+NFLX: 439.72%
+MA: 286.37%
+MSFT: 261.44%
+V: 255.34%
+FB: 171.22%
+AAPL: 136.35%
+JPM: 123.23%
+GOOGL: 111.89%
+PG: 78.70%
+JNJ: 48.25%
+
+--- VOLATILITY ANALYSIS ---
+Annualized Volatility:
+NFLX: 35.13%
+NVDA: 34.92%
+AMZN: 24.68%
+FB: 23.53%
+AAPL: 20.40%
+GOOGL: 19.76%
+MSFT: 19.37%
+MA: 17.95%
+JPM: 17.36%
+V: 17.10%
+JNJ: 13.39%
+PG: 12.71%
+
+--- RISK-RETURN ANALYSIS ---
+Risk-Return Metrics (Sorted by Sharpe Ratio):
+NVDA: Return: 46.76%, Risk: 34.92%, Sharpe: 1.3390
+AMZN: Return: 32.16%, Risk: 24.68%, Sharpe: 1.3031
+MA: Return: 22.46%, Risk: 17.95%, Sharpe: 1.2512
+V: Return: 20.87%, Risk: 17.10%, Sharpe: 1.2200
+MSFT: Return: 21.65%, Risk: 19.37%, Sharpe: 1.1177
+NFLX: Return: 34.16%, Risk: 35.13%, Sharpe: 0.9722
+JPM: Return: 13.41%, Risk: 17.36%, Sharpe: 0.7725
+FB: Return: 18.00%, Risk: 23.53%, Sharpe: 0.7652
+AAPL: Return: 14.97%, Risk: 20.40%, Sharpe: 0.7339
+PG: Return: 9.22%, Risk: 12.71%, Sharpe: 0.7252
+GOOGL: Return: 13.08%, Risk: 19.76%, Sharpe: 0.6621
+JNJ: Return: 6.54%, Risk: 13.39%, Sharpe: 0.4884
+
+--- CORRELATION ANALYSIS ---
+Average correlation with other stocks (lowest to highest):
+PG: 0.3324
+JNJ: 0.3928
+NFLX: 0.4082
+NVDA: 0.4138
+JPM: 0.4460
+FB: 0.4706
+AAPL: 0.4873
+AMZN: 0.5014
+GOOGL: 0.5324
+V: 0.5567
+MSFT: 0.5604
+MA: 0.5754
