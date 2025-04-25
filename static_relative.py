@@ -3,7 +3,7 @@
 # Assume that `prices` is your DataFrame containing only the daily prices of each stock for the testing year (2018-08-01 to 2019-07-01).
 
 
-initial_weights1 = [0.115, 0.102, 0.100, 0.087, 0.087, 0.086, 0.085, 0.083, 0.082, 0.082]
+initial_weights1 = [0.115, 0.102, 0.100, 0.087, 0.087, 0.086, 0.085, 0.083, 0.082, 0.082] # These are the weights of each stock in the portfolio according to their individual Sharpe ratios.
 
 def calculate_portfolio_profit(prices, initial_weights):
     initial_weights = np.array(initial_weights)
