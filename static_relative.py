@@ -21,6 +21,12 @@ def calculate_portfolio_profit(prices, initial_weights):
     
     # Holdings is the number of shares you have of each stock
     holdings = dollar_allocation / start_prices
+
+    # Calculate portfolio value for the period
+    period_prices = prices.loc['2018-08-01':'2018-10-31']
+    for day in period_prices.index:
+        day_prices = prices.loc[day]
+        portfolio_value[day] = np.sum(holdings * day_prices)
     
     # Calculate how much money is in your portfolio on the day right before rebalancing it for the first time.
     current_money = holdings * prices.loc['2018-11-01']
